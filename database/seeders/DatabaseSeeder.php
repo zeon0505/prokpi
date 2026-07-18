@@ -15,13 +15,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::updateOrCreate(
-            ['email' => 'admin@kpi.staimas.ac.id'],
-            [
-                'name' => 'Admin KPI',
-                'password' => bcrypt('password'),
-                'is_admin' => true,
-            ]
-        );
+        $admins = [
+            ['name' => 'Yoga', 'email' => 'yoga@staimas.com'],
+            ['name' => 'Naufal', 'email' => 'naufal@staimas.com'],
+            ['name' => 'Syafikah', 'email' => 'syafikah@staimas.com'],
+            ['name' => 'Khadafi', 'email' => 'khadafi@staimas.com'],
+        ];
+
+        foreach ($admins as $admin) {
+            User::updateOrCreate(
+                ['email' => $admin['email']],
+                [
+                    'name'     => $admin['name'],
+                    'password' => bcrypt('stmas123'),
+                    'is_admin' => true,
+                ]
+            );
+        }
     }
 }
