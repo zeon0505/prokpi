@@ -6,6 +6,7 @@
   <title>{{ $title ?? 'KPI STAIMAS Wonogiri' }} – Komunikasi & Penyiaran Islam S1</title>
   <meta name="description" content="{{ $description ?? 'Program Studi Komunikasi dan Penyiaran Islam (KPI) S1 STAIMAS Wonogiri – Mencetak Da\'i, Jurnalis, dan Komunikator Islam yang Profesional.' }}" />
   <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
