@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ $title ?? 'KPI STAIMAS Wonogiri' }} – Komunikasi & Penyiaran Islam S1</title>
   <meta name="description" content="{{ $description ?? 'Program Studi Komunikasi dan Penyiaran Islam (KPI) S1 STAIMAS Wonogiri – Mencetak Da\'i, Jurnalis, dan Komunikator Islam yang Profesional.' }}" />
-  <link rel="icon" type="image/png" href="{{ asset('assest/LOGO%20STAIMAS%20AI.png') }}" />
+  <link rel="icon" type="image/png" href="{{ asset('assest/LOGO%20STAIMAS%20AI.png') }}?v=2" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
