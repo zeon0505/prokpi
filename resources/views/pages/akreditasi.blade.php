@@ -4,37 +4,27 @@
 @section('content')
 <div class="max-w-6xl mx-auto space-y-6">
 
-  {{-- Card Wrapper Gambar Sertifikat --}}
-  <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden p-2 sm:p-4">
-    <div class="w-full flex justify-center">
-      <img 
-        id="img-sertifikat"
-        src="{{ asset('assest/Sertifikat%20Akreditasi%20KPI.png') }}" 
-        alt="Sertifikat Akreditasi KPI STAIMAS Wonogiri" 
-        class="w-full h-auto rounded-xl border border-gray-100 shadow-sm object-contain"
-      />
-    </div>
+  {{-- PDF Google Viewer (Tanpa Toolbar) --}}
+  <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden p-1 sm:p-2">
+    <iframe
+      src="https://docs.google.com/gview?url={{ urlencode(asset('assest/Sertifikat Akreditasi KPI.pdf')) }}&embedded=true"
+      class="w-full"
+      style="height: 78vh; min-height: 550px; border: none;"
+      title="Sertifikat Akreditasi KPI">
+    </iframe>
   </div>
 
-  {{-- Tombol Aksi Tambahan di Bawah --}}
+  {{-- Tombol Aksi di Bawah --}}
   <div class="flex justify-center gap-3">
     <a href="{{ asset('assest/Sertifikat%20Akreditasi%20KPI.pdf') }}" target="_blank"
        class="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white text-sm font-bold px-6 py-3 rounded-xl transition-all shadow">
-      <i class="fas fa-file-pdf"></i> Lihat Versi PDF
+      <i class="fas fa-file-pdf"></i> Buka File PDF Asli
     </a>
-    <a href="{{ asset('assest/Sertifikat%20Akreditasi%20KPI.png') }}" download
+    <a href="{{ asset('assest/Sertifikat%20Akreditasi%20KPI.pdf') }}" download
        class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-bold px-6 py-3 rounded-xl transition-all">
-      <i class="fas fa-download"></i> Unduh Gambar
+      <i class="fas fa-download"></i> Unduh Sertifikat
     </a>
   </div>
 
 </div>
-
-<script>
-document.getElementById('img-sertifikat').addEventListener('error', function() {
-  this.onerror = null;
-  this.src = "{{ asset('assest/Sertifikat Akreditasi KPI.jpg') }}";
-});
-</script>
-
 @endsection
