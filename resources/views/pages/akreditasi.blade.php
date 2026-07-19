@@ -8,10 +8,10 @@
   <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden p-2 sm:p-4">
     <div class="w-full flex justify-center">
       <img 
+        id="img-sertifikat"
         src="{{ asset('assest/Sertifikat%20Akreditasi%20KPI.png') }}" 
         alt="Sertifikat Akreditasi KPI STAIMAS Wonogiri" 
         class="w-full h-auto rounded-xl border border-gray-100 shadow-sm object-contain"
-        onerror="this.onerror=null; this.src='{{ asset('assest/Sertifikat Akreditasi KPI.jpg') }}';"
       />
     </div>
   </div>
@@ -29,4 +29,12 @@
   </div>
 
 </div>
+
+<script>
+document.getElementById('img-sertifikat').addEventListener('error', function() {
+  this.onerror = null;
+  this.src = "{{ asset('assest/Sertifikat Akreditasi KPI.jpg') }}";
+});
+</script>
+
 @endsection
