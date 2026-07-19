@@ -42,7 +42,10 @@
             </a>
             <form action="{{ route('admin.slides.destroy', $slide) }}" method="POST">
               @csrf @method('DELETE')
-              <button type="button" onclick="confirmDelete(this.closest('form'), '{{ addslashes($slide->judul ?? 'Slide') }}')" class="inline-flex items-center gap-1 text-xs font-semibold text-red-600 hover:text-red-800 bg-red-50 hover:bg-red-100 px-3 py-1.5 rounded-lg transition-all">
+              <button type="button"
+                data-label="{{ $slide->judul ?? 'Slide' }}"
+                onclick="confirmDelete(this.closest('form'), this.dataset.label)"
+                class="inline-flex items-center gap-1 text-xs font-semibold text-red-600 hover:text-red-800 bg-red-50 hover:bg-red-100 px-3 py-1.5 rounded-lg transition-all">
                 <i class="fas fa-trash text-[10px]"></i> Hapus
               </button>
             </form>
