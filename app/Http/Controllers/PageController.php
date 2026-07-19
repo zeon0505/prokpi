@@ -111,4 +111,12 @@ class PageController extends Controller
             'otherBeritas' => $otherBeritas,
         ]);
     }
+
+    public function akreditasi()
+    {
+        return view('pages.akreditasi', [
+            'title'    => 'Akreditasi KPI',
+            'subtitle' => 'Sertifikat Akreditasi Program Studi Komunikasi dan Penyiaran Islam STAIMAS Wonogiri',
+        ]);
+    }
 }
