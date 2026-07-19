@@ -11,7 +11,7 @@
         src="{{ asset('assest/Sertifikat%20Akreditasi%20KPI.png') }}" 
         alt="Sertifikat Akreditasi KPI STAIMAS Wonogiri" 
         class="w-full h-auto rounded-xl border border-gray-100 shadow-sm object-contain"
-        onerror="this.onerror=null; this.src='{{ asset('assest/Sertifikat%20Akreditasi%20KPI.jpg') }}';"
+        onerror="this.onerror=null; this.src='{{ asset('assest/Sertifikat Akreditasi KPI.jpg') }}';"
       />
     </div>
   </div>
