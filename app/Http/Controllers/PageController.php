@@ -112,6 +112,37 @@ class PageController extends Controller
         ]);
     }
 
+    public function pengumuman()
+    {
+        return view('pages.pengumuman', [
+            'title' => 'Poster & Pengumuman KPI',
+            'subtitle' => 'Pengumuman resmi, poster informasi, dan kegiatan dari Prodi KPI STAIMAS Wonogiri',
+            'posters' => \App\Models\Poster::where('aktif', true)->latest()->get(),
+        ]);
+    }
+
+    public function pengumumanShow($key)
+    {
+        $poster = \App\Models\Poster::where('aktif', true)
+            ->where(function($q) use ($key) {
+                $q->where('slug', $key)->orWhere('id', $key);
+            })
+            ->firstOrFail();
+
+        $otherPosters = \App\Models\Poster::where('aktif', true)
+            ->where('id', '!=', $poster->id)
+            ->latest()
+            ->take(4)
+            ->get();
+
+        return view('pages.pengumuman-detail', [
+            'title'        => $poster->judul,
+            'subtitle'     => 'Dipublikasikan pada ' . $poster->created_at->isoFormat('D MMMM Y'),
+            'poster'       => $poster,
+            'otherPosters' => $otherPosters,
+        ]);
+    }
+
     public function akreditasi()
     {
         return view('pages.akreditasi', [
