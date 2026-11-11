@@ -20,7 +20,7 @@
         <div class="bg-teal-50 border-l-4 border-teal-600 p-6 rounded-r-2xl">
           <h2 class="font-bold text-gray-800 text-xl mb-3">Visi Keilmuan Program Studi KPI</h2>
           <p class="text-gray-700 text-base leading-relaxed italic">
-            "Menjadi program studi unggulan dalam menghasilkan sarjana Komunikasi dan Penyiaran Islam yang profesional, kreatif, berkarakter Islami, dan mampu menjawab tantangan dunia komunikasi dan media global berbasis nilai-nilai keindonesiaan dan keislaman."
+            "Menjadi program studi unggul dalam pengembangan ilmu komunikasi dan penyiaran Islam dengan menjunjung tinggi etika dan moral yang berlandaskan nilai nilai keindonesiaan dan religius kekaryaan serta mampu berperan pada tingkat Asia Tenggara tahun 2042"
           </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
