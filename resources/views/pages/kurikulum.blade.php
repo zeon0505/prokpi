@@ -22,14 +22,77 @@
 
     @php
     $semesters = [
-      1 => ['Al-Qur\'an Hadits I', 'Akidah Akhlak', 'Bahasa Arab I', 'Bahasa Indonesia', 'Filsafat Ilmu', 'Pengantar Ilmu Komunikasi', 'Pancasila & Kewarganegaraan'],
-      2 => ['Al-Qur\'an Hadits II', 'Fiqih Ibadah', 'Bahasa Arab II', 'Bahasa Inggris', 'Psikologi Komunikasi', 'Sejarah Kebudayaan Islam', 'Ilmu Tafsir'],
-      3 => ['Komunikasi Islam', 'Hadits Dakwah', 'Jurnalistik Islam', 'Teori Komunikasi', 'Retorika & Public Speaking', 'Ilmu Kalam', 'Ilmu Tasawuf'],
-      4 => ['Teknik Penyiaran Radio', 'Teknik Penyiaran TV', 'Produksi Media Digital', 'Fiqih Munakahat', 'Ushul Fiqih', 'Manajemen Media'],
-      5 => ['Dakwah Digital & Media Sosial', 'Editing Video & Audio', 'Manajemen Penyiaran', 'Fiqih Muamalah', 'Penelitian Komunikasi', 'Etika Jurnalistik Islam'],
-      6 => ['Magang / Praktik Lapangan', 'Kajian Kitab Kuning Dakwah', 'Fotografi & Videografi', 'KKN', 'Kapita Selekta KPI', 'Desain Grafis Dakwah'],
-      7 => ['Praktik Penyiaran', 'Skripsi / Tugas Akhir (Pra-Proposal)', 'Seminar Proposal'],
-      8 => ['Skripsi', 'Ujian Komprehensif', 'Munaqasah'],
+      1 => [
+        'Pancasila dan Kewarganegaraan',
+        'Bahasa Indonesia',
+        'Bahasa Inggris',
+        'Ilmu Tauhid',
+        'Akhlaq Tasawuf',
+        'Studi Islam dan Pemberdayaan Masyarakat',
+        'Bahasa Arab',
+        'Sejarah Peradaban Islam',
+        'Metodologi Studi Islam',
+        'Filsafat Umum',
+      ],
+      2 => [
+        'English for Communication',
+        'Pengantar Ilmu Komunikasi',
+        'Dasar-Dasar Penyiaran',
+        'Public Speaking',
+        'Sosiologi Komunikasi',
+        'Hukum dan Etika Media',
+        'Fiqih Kontemporer',
+      ],
+      3 => [
+        'Teori Komunikasi',
+        'Komunikasi Islam',
+        'Komunikasi Antar Budaya',
+        'Psikologi Komunikasi',
+        'Desain Komunikasi Visual',
+        'Fotografi',
+        'Komunikasi Massa',
+        'Marketing Komunikasi',
+      ],
+      4 => [
+        'Teknik Editing Video',
+        'Teknik Lobi dan Negosiasi',
+        'Pengelolaan Website',
+        'Statistik Sosial',
+        'Komunikasi Digital dan Media Baru',
+        'Komunikasi Politik',
+        'Dasar-Dasar Jurnalistik*',
+        'Public Relation*',
+      ],
+      5 => [
+        'Analisis Teks Media',
+        'Metode Penelitian Kuantitatif',
+        'Penulisan Kreatif*',
+        'Protokoler dan MC*',
+        'Jurnalistik Video*',
+        'Jurnalistik Online*',
+        'Produksi Konten Media Digital*',
+        'Analisis Sosial Media**',
+        'Bahasa Jurnalistik**',
+      ],
+      6 => [
+        'Metode Penelitian Kualitatif',
+        'Sinematografi',
+        'Dakwah Kontemporer',
+        'Periklanan dan Branding*',
+        'Jurnalistik Investigasi*',
+        'Penulisan Feature dan Opini*',
+        'Manajemen Pers*',
+        'Management Event*',
+        'Teknik Announcing**',
+        'Komunikasi Organisasi**',
+      ],
+      7 => [
+        'Praktikum Profesi',
+        'Kuliah Pengabdian Masyarakat',
+      ],
+      8 => [
+        'Skripsi',
+      ],
     ];
     @endphp
 
@@ -51,6 +114,7 @@
       </div>
       @endforeach
     </div>
+    <p class="text-xs text-gray-500 italic mt-2">* / ** Mata Kuliah Peminatan / Konsentrasi</p>
   </div>
 
   {{-- Download CTA --}}
